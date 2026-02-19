@@ -1,6 +1,4 @@
-## YAML Template.
----
-name: Multi-OS Testing - Ansh 
+name: Multi-OS Testing - Ansh Patel
 
 on:
   push:
@@ -23,7 +21,7 @@ jobs:
 
       - name: Create and Display File
         run: |
-          echo "Ubuntu test by YourName" > test-ubuntu.txt
+          echo "Ubuntu test by Ansh Patel" > test-ubuntu.txt
           cat test-ubuntu.txt
 
       - name: Done
@@ -43,7 +41,7 @@ jobs:
 
       - name: Create and Display File
         run: |
-          echo Windows test by YourName > test-windows.txt
+          echo Windows test by Ansh Patel > test-windows.txt
           type test-windows.txt
 
       - name: Done
