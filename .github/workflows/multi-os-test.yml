@@ -1,0 +1,50 @@
+## YAML Template.
+---
+name: Multi-OS Testing - YourName
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  test-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Start
+        run: echo "Testing on Ubuntu..."
+
+      - name: OS Info
+        run: uname -a
+
+      - name: Create and Display File
+        run: |
+          echo "Ubuntu test by YourName" > test-ubuntu.txt
+          cat test-ubuntu.txt
+
+      - name: Done
+        run: echo "Ubuntu tests completed"
+
+  test-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Start
+        run: echo "Testing on Windows..."
+
+      - name: OS Info
+        run: systeminfo
+
+      - name: Create and Display File
+        run: |
+          echo Windows test by YourName > test-windows.txt
+          type test-windows.txt
+
+      - name: Done
+        run: echo "Windows tests completed"
