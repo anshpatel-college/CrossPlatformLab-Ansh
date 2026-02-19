@@ -1,6 +1,6 @@
 ## YAML Template.
 ---
-name: Multi-OS Testing - YourName
+name: Multi-OS Testing - Ansh 
 
 on:
   push:
